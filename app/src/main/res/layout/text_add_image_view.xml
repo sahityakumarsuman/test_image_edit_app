@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.sahityakumarsuman.newmaker.widget.ZoomLayout
+        android:id="@+id/text_sticker_panel_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_text_button">
+
+        <com.example.sahityakumarsuman.newmaker.textadding.TextStickerView
+            android:id="@+id/text_sticker_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.example.sahityakumarsuman.newmaker.photoview.PhotoView
+                android:id="@+id/photo_view_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.example.sahityakumarsuman.newmaker.textadding.TextStickerView>
+
+    </com.example.sahityakumarsuman.newmaker.widget.ZoomLayout>
+
+
+    <Button
+        android:id="@+id/add_text_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ADD TEXT" />
+
+</RelativeLayout>
